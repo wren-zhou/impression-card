@@ -27,7 +27,7 @@ Designed for **Codex**, which can generate images. Clone it into your personal s
 为 **Codex** 设计（Codex 自带生图能力）。克隆到个人 skills 文件夹即可：
 
 ```bash
-git clone https://github.com/AvelynZhou/impression-card.git ~/.agents/skills/impression-card
+git clone https://github.com/wren-zhou/impression-card.git ~/.agents/skills/impression-card
 ```
 
 Codex usually picks up new skills automatically; restart it if the skill does not appear.
