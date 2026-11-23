@@ -1,106 +1,58 @@
 ---
 name: impression-card
-description: Create a single, standalone, highly detailed romantic European storybook illustration with architectural depth, lush flowers and foliage, and selective Monet-inspired impressionist light and brushwork. Use when the user asks for this illustration style, Paris street illustrations, romantic European scenes, or Monet-influenced detailed illustrations (e.g. 莫奈风格插画, 巴黎街景插画, 欧式浪漫插画).
+description: Transform uploaded photographs or specified scenes into finely detailed, romantic storybook illustrations with subtle Monet-inspired light, adaptive brushwork, rich spatial depth and natural element interweaving. Works with any subject, not only Paris.
 ---
 
-# Romantic European Impressionist Illustration
+# Impression Card — Detailed Storybook Illustration with Impressionist Light
+**Active prompt version: v1.1** (Adaptive Detail and Brushwork — Critical, plus selective painterly strokes for people and vehicles).
 
-Create **one independent finished image** per request. The image itself is the deliverable.
+## Version history and rollback
+- `versions/adaptive-detail-brushwork-v1.0.md`: approved baseline; adaptive detail and brushwork, no extra figure/vehicle stroke instruction.
+- `versions/adaptive-detail-brushwork-v1.1.md`: current; v1.0 plus **only** slightly more visible fine painterly strokes on figures and vehicles.
+- To roll back, set the active version to v1.0 and omit the v1.1 addition. Never silently replace the baseline with a newer experimental variant.
+- `references/prompts.md`: operational prompt using v1.1.
+- `references/monet-style.md`: optional colour and lighting guidance, not a source of mandatory Parisian or floral objects.
+- `references/examples.md` and `references/paintings/`: examples/reference material only, never mandatory scene content.
+
+## Primary priority: source content fidelity
+If an image is uploaded, the image defines what is depicted. Preserve recognizable subjects, location identity, viewpoint, framing, aspect ratio, main object positions, scale, perspective, relationships and source-appropriate light. Do not replace or redesign the setting.
+Parisian façades, towers, gardens, flowers and other romantic motifs are **not mandatory**, and should not appear unless present in the source or explicitly requested.
+When a user asks for a new illustration without a source photograph, compose the specified subject faithfully without forcing it into a Parisian setting.
 
 ## Core visual identity
+Richly detailed, clean and elegant storybook illustration first; impressionism primarily through light, colour, atmosphere and **selective** brushwork.
+Avoid both photorealistic pasted-in elements and uniform oil-paint texture.
+Every part of the image should be artistically rendered with a coherent illustrative language.
 
-A richly layered, meticulously detailed European storybook illustration, with Parisian architecture and gardens as a frequent subject. Combine:
-- Clear, elegant illustration design and readable architectural structure.
-- Monet-inspired impressionist handling of light, atmosphere, broken colour and selected painterly brushwork.
-- A romantic, slightly dreamlike French atmosphere without becoming fantasy architecture or generic AI collage.
+## Non-negotiable: detail, depth and interweaving
+- **Rich discoverable detail:** articulate existing architectural ornament, windows, railings, branches, leaves, cloth, paths, reflections, rocks, clouds or other scene-relevant elements. High fidelity in focal details, controlled simplification farther away. Richness is from depicted forms, not texture overload.
+- **Three spatial planes:** distinguish foreground, middle ground and background using size, perspective, softening, tonal hierarchy and atmospheric distance. Do not invent large foreground flowers or other additions just to fill space.
+- **Natural interweaving:** preserve believable overlap and partial occlusion between existing forms: branches against sky and façades, people among street furniture, roofs layered by distance, reflections connecting land/water/light. Integrate elements rather than isolating them like stickers.
+- **Full-scene transformation:** render foreground and moving objects as carefully as background; no background-only replacement or surface-level filter.
 
-The result should feel like a carefully composed, hand-painted illustration: detailed enough to explore, painterly enough to feel alive.
+## Adaptive Detail and Brushwork — Critical (v1.0 baseline)
+- Dense architectural/urban/interior scenes: precise architecture and street geometry; very restrained surface brushwork; fine illustration on windows, cornices, street furniture, signs and masonry.
+- Open landscapes/water/meadows/skies: more expressive strokes permitted, particularly in light, clouds, vegetation, reflections and atmosphere.
+- Monet influence comes chiefly from luminous light, delicate reflected hues, soft coloured shadows, subtle broken colour and atmospheric depth.
+- The more intricate the subject, the more **selective and quiet** the brushwork. Never apply chunky or uniform impasto across the canvas.
+- Keep nuanced, harmonious and source-adapted local colours. Avoid automatic golden-hour lighting or excessive orange/lavender treatment.
 
-## Bundled references
+## v1.1 addition — people and vehicles ONLY
+People and traffic/transport should retain **slightly more visible, delicate hand-painted brushstrokes** than the surrounding precisely drawn buildings and street.
+Use subtle painterly strokes on clothing folds, hair, skin shadow transitions, silhouettes, vehicle body panels, glass, reflected light, wheels and contours.
+The goal is a natural hand-painted presence, not realistic photo cut-outs. **Do not** cartoonize, exaggerate, distort anatomy, simplify heavily, change vehicle geometry, or make figures toy-like.
+Maintain accurate pose, proportions, perspective, scale, recognizable scene identity and original placement.
+**Do not change architecture, street treatment, lighting style, palette or other v1.0 parameters as a side effect of this addition.**
 
-- `references/monet-style.md`: depth planes, architectural and botanical detail, Monet-derived colour principles, brushwork roles, light moods.
-- `references/prompts.md`: the prompt template to adapt for each request.
-- `references/examples.md`: two example scene descriptions.
-- `references/paintings/`: five Monet paintings (public domain). If the image tool accepts a reference image, one of them may be supplied for light, colour relationships and brushwork only, never for its subject or composition.
+## Output rules
+- One standalone, full-bleed image **per source image**, unless the user explicitly requests a different arrangement or number.
+- Keep the source's aspect ratio and orientation; for wholly new images with no ratio specified, default to portrait 2:3.
+- No collage, panels, frames, border, layout, mockup, captions, added text, logo, signature or watermark.
+- Existing real-world signs may be represented when necessary for scene fidelity; do not invent new lettering.
+- Do not copy signatures or watermarks from visual style references.
 
-## Non-negotiable output rules
-
-- Generate **one standalone image only**.
-- Default composition: vertical portrait, 2:3 aspect ratio, unless the user specifies another ratio.
-- Never create a collage, mood board, contact sheet, diptych, triptych, multi-panel layout, comparison sheet, card, frame, border, scrapbook, poster layout or image grid.
-- No separate original-photo panel, palette panel, swatches, hang tag, plaque, label, signature, caption, title, typography, logo or watermark.
-- Do not add interface elements, mockups or decorative layout around the artwork.
-- Do not automatically produce multiple variants. Generate one image unless the user asks for more.
-- The image must fill the canvas edge to edge.
-
-## Composition and depth
-
-Build a deliberate three-plane composition with strong spatial layering:
-
-1. **Foreground:** abundant flowers, leaves, climbing vines, branches, garden beds, stone paths, railings or other scene-appropriate details. Use overlapping forms that partially frame the view.
-2. **Middle ground:** the principal street, square, café terrace, townhouse façades, balconies, lamps, people, trees, bridges or other focal elements.
-3. **Background:** layered Paris rooftops, church towers, monuments, distant streets, skyline and atmospheric sky.
-
-Interweave elements naturally. Let branches cross the sky, flowers overlap walls, foliage partly conceal façades, railings lead the eye inward, and buildings overlap one another. Use varied scale, partial occlusion, perspective and atmospheric perspective to create convincing depth. Avoid isolated cut-out objects or a flat catalogue of details.
-
-Keep the main architectural subject legible. Windows, shutters, cornices, rooflines, iron balconies, stonework, arches, shopfronts and street furniture should be carefully articulated. Small details should reward close inspection without making the overall image noisy.
-
-## Paris scene guidance
-
-When the user asks for a Paris street:
-- Use recognisable Parisian urban language: elegant Haussmann façades, mansard roofs, dormer windows, wrought-iron balconies, tall French windows, café awnings, zinc rooftops, cobbled or paved streets, classic street lamps and intimate shopfronts.
-- Include the Eiffel Tower, Seine, Notre-Dame or another landmark only when it suits the requested scene; do not cram every landmark into one image.
-- Make the street feel inhabited through a few naturally placed pedestrians, café guests, bicycles or a vintage car when appropriate. Keep figures small and subordinate to the architecture.
-- Integrate lush flowers and foliage into window boxes, balconies, terraces, street trees and foreground gardens.
-- Preserve plausible Parisian architecture and street scale while allowing a poetic, idealised atmosphere.
-
-## Colour and light
-
-Use a harmonious, nuanced palette:
-- Warm cream, limestone, pale butter yellow, muted peach and soft terracotta for façades.
-- Sage, olive, deep garden green and blue-green for foliage.
-- Powder blue, lavender, periwinkle and soft violet in sky and shadows.
-- Selective coral, poppy red, blush pink, butter yellow and ivory flowers.
-- Warm amber and honey-gold window light, lanterns and café interiors.
-
-Borrow Monet's colour relationships: complementary colours placed side by side, coloured shadows rather than black, reflected sky colour travelling across buildings and streets, and small vivid accents set against broad quiet colour fields. Light should unify the whole scene as a gentle atmospheric envelope. Choose a coherent time of day—soft morning, golden afternoon, blue hour or luminous evening—based on the user's request.
-
-## Painterly technique
-
-- Use broken colour and visible, varied brush marks, especially in foliage, flowers, clouds, reflections and sunlit stone.
-- Keep architecture more carefully drawn and structurally readable than the surrounding vegetation.
-- Mix fine illustrative detail with looser impressionist passages. Do not apply identical texture everywhere.
-- Use soft atmospheric edges in distant forms and more precise edges on selected focal details.
-- Avoid photorealism, glossy digital rendering, flat vector shapes, crude cartoon styling and generic watercolor washes.
-- The Monet influence should be visible in light, colour and brushwork, not by copying a specific existing painting.
-
-## Workflow
-
-1. Identify the requested location or scene, focal subject, time of day and mood. If the user has provided visual references, treat them as the primary guidance for composition and style.
-2. Plan foreground, middle ground and background before generating. Deliberately specify overlapping elements and perspective cues.
-3. Generate one full-bleed standalone illustration. Prioritise architectural detail, rich botanical layering, natural interweaving and clear depth.
-4. Check that the result contains no collage layout, panels, labels, palette, frame, text or watermark. If any appear, regenerate without them.
-
-## Default prompt structure
-
-Describe:
-- the exact scene and focal architecture;
-- vertical 2:3 full-bleed composition;
-- foreground / middle ground / background;
-- specific overlapping and interwoven elements;
-- detailed architectural features;
-- flowers and foliage;
-- Monet-inspired light, colour and selective broken brushwork;
-- the chosen time of day and atmosphere;
-- explicit exclusions: no collage, no panels, no text, no labels, no watermark, no border.
-
-## Quality checklist
-
-- One standalone image, not a composite.
-- Strong three-dimensional depth with distinct foreground, middle ground and background.
-- Numerous elements overlap and interweave naturally.
-- Architectural details are fine, coherent and readable.
-- Flowers and foliage are lush, varied and layered rather than repetitive.
-- Monet influence appears through colour, light, atmosphere and brushwork.
-- The image feels like one unified, carefully composed illustration.
-- No text, signature, watermark, frame, border, collage or inset panels.
+## Workflow and quality gate
+1. Inspect source image and identify existing focal subjects, dense vs. open areas, lighting, foreground/middle/background and naturally overlapping elements.
+2. Preserve composition and all important spatial relationships before applying styling.
+3. Apply v1.0 adaptive detail rules; then apply the **single v1.1 delta only to people and vehicles** where present.
+4. Verify whole-scene illustration, fine detail, believable spatial depth, natural interweaving, readable structures and coherent light. Reject background-only swaps, uniform texture, cartoon figures, photoreal vehicles and arbitrary additions.
