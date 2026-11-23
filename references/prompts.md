@@ -1,31 +1,22 @@
-# Standalone illustration prompt guide
+# Operational prompt — impression-card v1.1
 
-Use this template for one independent image. Adapt scene details to the user's request and supplied references.
+**Version discipline:** Core style is exactly `versions/adaptive-detail-brushwork-v1.0.md`; apply ONLY the people/vehicle addition in `versions/adaptive-detail-brushwork-v1.1.md`. To rollback, remove that addition and use v1.0. Do not unintentionally alter building, street, vegetation, lighting or palette when tuning figure/transport rendering.
 
 ```text
-Create one finished, standalone, full-bleed vertical 2:3 illustration of [SCENE].
+Transform the supplied image into one full-bleed, richly detailed and elegant hand-painted storybook illustration, with subtle Monet-inspired light and colour rather than heavy, all-over oil-paint texture.
 
-Style: richly detailed romantic European storybook illustration, combining elegant architectural illustration with selective Monet-inspired impressionist colour, light and brushwork. The image should be meticulously detailed, layered and painterly—not photorealistic, not flat vector art.
+Use the uploaded source photo as the authoritative reference for subject, viewpoint, aspect ratio, spatial relationships, poses, buildings, objects, vegetation, time of day and scene identity. Do not force the scene into Paris or add unrelated romantic motifs.
 
-Composition and depth:
-- Foreground: [flowers, leaves, branches, vines, garden path, railings or scene-specific framing elements].
-- Middle ground: [main street, buildings, café, people, lamps and focal architecture].
-- Background: [distant rooftops, skyline, landmark, church spire, hills or sky].
-Make the planes overlap and interweave naturally. Let foliage partly frame and conceal architecture, branches cross portions of the sky, flowers overlap stone walls, and paths, balconies or railings guide the eye into the scene. Use perspective, scale changes and atmospheric depth.
+Preserve carefully drawn architecture, windows, ornaments, street surfaces and other important structural details. Make the entire scene illustrated, with rich small discoveries, strong foreground/middle/background depth, atmospheric perspective, and natural element overlap/occlusion already supported by the source.
 
-Architecture: carefully render [specific façades, mansard roofs, dormers, chimneys, windows, shutters, iron balconies, cornices, stonework, arches, shopfronts]. Preserve believable structure and perspective. Fine detail should remain legible.
+Adaptive brushwork: In visually dense city, interior or architectural scenes use fine, controlled illustrative detail with restrained strokes; emphasize painterly treatment only in sunlight, coloured shadows, foliage, clouds, reflected light and atmosphere. In open landscapes more expressive natural strokes are allowed. Avoid distracting repeated brush marks, chunky impasto and unstructured textured surfaces.
 
-Botanical detail: abundant, varied flowers and foliage with distinct leaf shapes, flower heads, stems and layers. Avoid repetitive decorative patterns. Use overlapping plant masses and varied heights.
+Light and palette: luminous, nuanced and coherent with the original source, subtle complementary colour and coloured shadows; never impose a universal golden-hour or lavender filter.
 
-Colour and light: [time of day and mood]. Warm cream and limestone, soft peach and terracotta, sage and deep greens, powder blue, lavender and violet shadows, with small coral, pink, yellow and ivory floral accents. Use Monet-inspired complementary colour, coloured shadows, reflected light and a unifying atmospheric envelope.
+v1.1 figure/transport delta ONLY: Render existing people and vehicles with slightly more visible, fine, organic hand-painted strokes in clothing folds, hair, soft skin shadows, vehicle panels, glass/reflections and rounded contours, ensuring they belong to the same illustration. Preserve natural anatomy, scale, pose, vehicle shape and perspective. Do not make them cartoony, toy-like, simplified, exaggerated or photorealistic photo cut-outs.
 
-Brushwork: varied visible painterly marks. Use delicate illustrative strokes for architectural detail, softer blended strokes for distant atmosphere, and lively broken-colour dabs for flowers, leaves, sunlight and reflections. Keep the focal architecture clear while allowing the garden and atmosphere to feel impressionistic.
-
-The result should feel romantic, elegant, richly layered and full of small discoveries on close inspection.
-
-Strict exclusions: one image only; no collage, no diptych, no triptych, no panels, no contact sheet, no comparison sheet, no card layout, no photo inset, no palette or colour swatches, no labels, no typography, no signature, no logo, no watermark, no frame or border.
+Preserve the fine architecture and street rendering from v1.0 unchanged. No added decorative flowers or trees unless genuinely supported by the original scene. No added captions, labels, logo, signature, borders, panels, watermarks or collage. One finished image per source photograph.
 ```
 
-## When a visual reference is supplied
-
-Use the user's reference image for the intended overall visual language, level of detail, composition and layering. Do not reproduce watermarks, social-media UI, usernames or embedded text. If a Monet painting is also supplied, use it only for light, colour relationships and brushwork—not for copying its subject or composition.
+## When a visual style reference is supplied
+Use the style reference for fine drawing quality, restrained brushwork, colour, light and depth; use the actual source photograph for objects and composition. Never reproduce watermarks, UI or reference-image-specific buildings, plants or figures.
