@@ -1,22 +1,15 @@
-# Operational prompt — impression-card v1.1
+# Operational Prompt — Impression Card v1.4.1 (FROZEN)
 
-**Version discipline:** Core style is exactly `versions/adaptive-detail-brushwork-v1.0.md`; apply ONLY the people/vehicle addition in `versions/adaptive-detail-brushwork-v1.1.md`. To rollback, remove that addition and use v1.0. Do not unintentionally alter building, street, vegetation, lighting or palette when tuning figure/transport rendering.
+This prompt is for **photo-to-illustration editing only**, never poster typography or freeform text-to-image. Use the *actual source photo* and preserve its objects and layout.
 
 ```text
-Transform the supplied image into one full-bleed, richly detailed and elegant hand-painted storybook illustration, with subtle Monet-inspired light and colour rather than heavy, all-over oil-paint texture.
+Edit the ACTUAL attached source photograph using image-to-image transformation. Preserve subjects, number of people, poses, buildings, traffic, road alignment, shorelines, terrain, trees, camera angle, composition and aspect ratio. Do not add new landmarks, trees, boats, vehicles, people or structures. Do not combine source pictures.
 
-Use the uploaded source photo as the authoritative reference for subject, viewpoint, aspect ratio, spatial relationships, poses, buildings, objects, vegetation, time of day and scene identity. Do not force the scene into Paris or add unrelated romantic motifs.
+Repaint the whole image as detailed romantic storybook illustration with Monet-inspired luminous light and an airy impressionist oil-paint finish. Preserve depth through existing scene elements, edge hierarchy, overlap, atmospheric perspective, coloured shadows and reflections. Enrich existing greenery only; slight extension of existing frame-edge foliage is allowed.
 
-Preserve carefully drawn architecture, windows, ornaments, street surfaces and other important structural details. Make the entire scene illustrated, with rich small discoveries, strong foreground/middle/background depth, atmospheric perspective, and natural element overlap/occlusion already supported by the source.
+Adapt strokes to density: crisp fine architectural drawing in dense city scenes; more expressive controlled oil strokes in foliage, natural terrain, clouds, reflections, water, dappled light. Preserve some watercolor-like softness in atmosphere without becoming a watercolor picture or heavy impasto.
 
-Adaptive brushwork: In visually dense city, interior or architectural scenes use fine, controlled illustrative detail with restrained strokes; emphasize painterly treatment only in sunlight, coloured shadows, foliage, clouds, reflected light and atmosphere. In open landscapes more expressive natural strokes are allowed. Avoid distracting repeated brush marks, chunky impasto and unstructured textured surfaces.
-
-Light and palette: luminous, nuanced and coherent with the original source, subtle complementary colour and coloured shadows; never impose a universal golden-hour or lavender filter.
-
-v1.1 figure/transport delta ONLY: Render existing people and vehicles with slightly more visible, fine, organic hand-painted strokes in clothing folds, hair, soft skin shadows, vehicle panels, glass/reflections and rounded contours, ensuring they belong to the same illustration. Preserve natural anatomy, scale, pose, vehicle shape and perspective. Do not make them cartoony, toy-like, simplified, exaggerated or photorealistic photo cut-outs.
-
-Preserve the fine architecture and street rendering from v1.0 unchanged. No added decorative flowers or trees unless genuinely supported by the original scene. No added captions, labels, logo, signature, borders, panels, watermarks or collage. One finished image per source photograph.
+Figures less micro-detailed than buildings, clearly painterly but anatomically natural; vehicles retain identity and perspective. One standalone full-bleed output per source, no collage or new typography.
 ```
 
-## When a visual style reference is supplied
-Use the style reference for fine drawing quality, restrained brushwork, colour, light and depth; use the actual source photograph for objects and composition. Never reproduce watermarks, UI or reference-image-specific buildings, plants or figures.
+See `SKILL.md` and `versions/impression-card-v1.4.1.en.md` for full rules. This is the accepted visual style; poster compositions must be authored separately.
