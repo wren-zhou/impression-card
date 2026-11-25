@@ -1,6 +1,8 @@
-# impression-card
+# oil-painting
 
 **Current approved version: v1.4.1 — Frozen.**
+
+Formerly named `impression-card`. The active skill identifier is now `oil-painting`; the frozen art direction and historical version files are unchanged.
 
 Turn **a real source photograph** into a faithful, detailed romantic storybook illustration with Monet-inspired light, airy oil-led brushwork and natural foreground-to-background depth. Scene content, objects and composition remain sourced from the input image.
 

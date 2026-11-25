@@ -1,9 +1,9 @@
 ---
-name: impression-card
+name: oil-painting
 description: Transform user-supplied photographs into scene-faithful romantic storybook illustrations with luminous impressionist light, an airy oil-led painterly finish, adaptive brushwork and natural depth. Work on any subject.
 ---
 
-# Impression Card — Detailed Romantic Storybook Illustration with Impressionist Light
+# Oil Painting — Detailed Romantic Storybook Illustration with Impressionist Light
 
 **Active approved version: v1.4.1 — FROZEN**
 **Art direction:** detailed romantic storybook illustration; Monet-inspired light; oil painting with visible but light, nuanced brushwork and a touch of watercolor-like airiness.

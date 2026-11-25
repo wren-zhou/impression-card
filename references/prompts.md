@@ -1,4 +1,4 @@
-# Operational Prompt — Impression Card v1.4.1 (FROZEN)
+# Operational Prompt — Oil Painting v1.4.1 (FROZEN)
 
 This prompt is for **photo-to-illustration editing only**, never poster typography or freeform text-to-image. Use the *actual source photo* and preserve its objects and layout.
 
